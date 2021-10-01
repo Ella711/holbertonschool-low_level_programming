@@ -11,7 +11,7 @@ int main(void)
 
 	for (i = 48; i < 103; i++)
 	{
-		if(i == 58)
+		if (i == 58)
 		{
 			i = 97;
 		}
