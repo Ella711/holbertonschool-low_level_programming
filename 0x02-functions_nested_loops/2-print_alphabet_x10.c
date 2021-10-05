@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-* print_alphabetx10 - prints the alphabet 10 times
+* void print_alphabet_x10(void) - prints the alphabet 10 times
 */
 
-void print_alphabetx10(void)
+void print_alphabet_x10(void)
 {
 	int a = 0;
 

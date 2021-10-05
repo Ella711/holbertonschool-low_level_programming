@@ -10,7 +10,7 @@ int _putchar(char c);
 /* Prints alphabet in lowercase */
 void print_alphabet(void);
 /* print_alphabetx10 - prints the alphabet 10 times */
-void print_alphabetx10(void);
+void print_alphabet_x10(void);
 /* function that checks for lowercase character */
 int _islower(int c);
 /* function that checks for alphabetic character */
