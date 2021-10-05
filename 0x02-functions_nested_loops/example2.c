@@ -1,10 +1,10 @@
-#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <ctype.h>
+#include <time.h>
 
-/**
-* void times_table(void) - prints 9 times table
-*/
-
-void times_table(void)
+int main(void)
 {
 	int row;
 	int column;
@@ -21,29 +21,30 @@ void times_table(void)
 			if (column == 0)
 			{
 				
-				_putchar(result + '0');
+				putchar(result + '0');
 				
 				
 			}
 			else if (result <= 9)
 			{
 				
-				_putchar(44);
-				_putchar(32);
-				_putchar(32);
-				_putchar(result + '0');
+				putchar(44);
+				putchar(32);
+				putchar(32);
+				putchar(result + '0');
 			}
 			else if (result > 9)
 			{
-				_putchar(44);
-				_putchar(32);
+				putchar(44);
+				putchar(32);
 				a = result/10;
 				b = result%10;
-				_putchar(a + '0');
-				_putchar(b + '0');
+				putchar(a + '0');
+				putchar(b + '0');
 			}
 		}
-		_putchar(10);
+		putchar(10);
 	}
 
+	return (0);
 }
