@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
-* void print_to_98(int n) - prints from n till 98
+*print_to_98 - prints from n till 98
+*@n: any integer
 */
 
 void print_to_98(int n)
@@ -10,16 +11,15 @@ void print_to_98(int n)
 	{
 		printf("%d, ", n);
 		n++;
-		
-	} 
+	}
 	while (n > 97 && n != 98)
 	{
 		printf("%d, ", n);
 		n--;
 	}
-	if (n == 98 )
+	if (n == 98)
 	{
 		printf("%d\n", n);
 	}
-	
 }
+
