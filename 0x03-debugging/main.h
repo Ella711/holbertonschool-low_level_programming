@@ -2,7 +2,6 @@
 #define MAIN_H
 
 #include <stdlib.h>
-#include <stdio.h>
 #include <time.h>
 
 /*positive_or_negative - Prints positive or negative*/
