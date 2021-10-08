@@ -23,5 +23,7 @@ void more_numbers(void);
 void print_line(int n);
 /* prints a triangle, followed by a new line */
 void print_triangle(int size);
+/* draws a diagonal line on the terminal */
+void print_diagonal(int n);
 
 #endif /* MAIN_HEADER */
