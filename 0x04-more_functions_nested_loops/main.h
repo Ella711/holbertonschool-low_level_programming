@@ -25,5 +25,7 @@ void print_line(int n);
 void print_triangle(int size);
 /* draws a diagonal line on the terminal */
 void print_diagonal(int n);
+/* draws a square */
+void print_square(int size);
 
 #endif /* MAIN_HEADER */
