@@ -15,5 +15,7 @@ void swap_int(int *a, int *b);
 int _strlen(char *s);
 /* prints the string */
 void _puts(char *str);
+/* prints the string in reverse */
+void print_rev(char *s);
 
 #endif /* MAIN_HEADER */
