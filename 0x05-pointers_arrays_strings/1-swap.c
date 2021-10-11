@@ -2,12 +2,17 @@
 
 /**
 * swap_int - swaps integers
-*@*a: any integer
-*@*b" any integer
+*@a: any integer
+*@b: an integer
 */
 
 void swap_int(int *a, int *b)
 {
-	*a = 42;
-	*b = 98;
+	int oriA;
+
+	oriA = *a;
+
+	*a = *b;
+	*b = oriA;
 }
+
