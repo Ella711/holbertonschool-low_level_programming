@@ -19,5 +19,7 @@ void _puts(char *str);
 void print_rev(char *s);
 /* reverses a string */
 void rev_string(char *s);
+/* prints every other character */
+void puts2(char *str);
 
 #endif /* MAIN_HEADER */
