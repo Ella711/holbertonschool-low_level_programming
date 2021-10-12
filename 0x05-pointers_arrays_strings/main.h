@@ -21,5 +21,7 @@ void print_rev(char *s);
 void rev_string(char *s);
 /* prints every other character */
 void puts2(char *str);
+/* prints second half of the string */
+void puts_half(char *str);
 
 #endif /* MAIN_HEADER */
