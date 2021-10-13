@@ -3,6 +3,7 @@
 /**
 * _atoi - converts a string to an integer
 *@s: a string
+*Return: integers
 */
 
 int _atoi(char *s)
@@ -28,5 +29,6 @@ int _atoi(char *s)
 	{
 		result *= -1;
 	}
-	return(result);
+	return (result);
 }
+
