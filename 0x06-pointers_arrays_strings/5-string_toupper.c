@@ -14,7 +14,7 @@ char *string_toupper(char *str)
 	while (str[i])
 	{
 		if (str[i] > 96 && str[i] < 123)
-			str[i] = str[i] - 32;
+			str[i] = str[i] - 32; /* subtract 32 to make it capital */
 		i++;
 	}
 	return (str);
