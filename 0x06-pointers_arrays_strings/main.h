@@ -21,5 +21,7 @@ int _strcmp(char *s1, char *s2);
 void reverse_array(int *a, int n);
 /* changes all lowercase letters of a string to uppercase */
 char *string_toupper(char *);
+/* capitalizes all words of a string */
+char *cap_string(char *);
 
 #endif /* MAIN_HEADER */
