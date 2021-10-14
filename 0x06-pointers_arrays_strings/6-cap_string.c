@@ -9,31 +9,30 @@
 
 char *cap_string(char *str)
 {
-	int i;
+	int i = 0;
+
+	if (i == 0)
+	{
+	/* checks if first character is lowercase */
+	if ((str[i] >= 'a' && str[i] <= 'z'))
+		str[i] = str[i] - 32;
+	}
 
 	for (i = 0; str[i]; i++)
 	{
-		/* check first character is lowercase alphabet */
-		if (i == 0)
-		{
-			if ((str[i] >= 'a' && str[i] <= 'z'))
-				str[i] = str[i] - 32;
-			continue;
-		}
-		if (str[i] == '\n' || str[i] == ' '
-		|| str[i] == '\t' || str[i] == '.'
-		|| str[i] == ':' || str[i] == ';'
+		if (str[i] == ' ' || str[i] == ','
+		|| str[i] == '\t' || str[i] == '\n'
+		|| str[i] == ';' || str[i] == '.'
 		|| str[i] == '!' || str[i] == '?'
 		|| str[i] == '"' || str[i] == '('
 		|| str[i] == ')' || str[i] == '{'
 		|| str[i] == '}')
 		{
-			/* if found, check next character */
-			++i;
+
 			/* check if next character is lowercase */
-			if (str[i] >= 'a' && str[i] <= 'z')
+			if (str[i + 1] >= 'a' && str[i + 1] <= 'z')
 			{
-				str[i] = str[i] - 32;
+				str[i + 1] = str[i + 1] - 32;
 				continue;
 			}
 		}
