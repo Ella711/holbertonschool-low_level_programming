@@ -23,5 +23,7 @@ void reverse_array(int *a, int n);
 char *string_toupper(char *);
 /* capitalizes all words of a string */
 char *cap_string(char *);
+/* leet speak */
+char *leet(char *str);
 
 #endif /* MAIN_HEADER */
