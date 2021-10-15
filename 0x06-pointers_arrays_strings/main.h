@@ -25,5 +25,7 @@ char *string_toupper(char *);
 char *cap_string(char *);
 /* leet speak */
 char *leet(char *str);
+/* encodes a string using rot13 */
+char *rot13(char *);
 
 #endif /* MAIN_HEADER */
