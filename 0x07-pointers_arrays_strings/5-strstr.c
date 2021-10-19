@@ -74,7 +74,7 @@ char *_strstr(char *haystack, char *needle)
 	for (; (p = _strchr(p, *needle)) != 0; p++)
 	{
 		if (*p == '\0' && *needle == '\0')
-			return (NULL);
+			return (haystack);
 		if (_strncmp(p, needle, i) == 0)
 			return ((char *)p);
 	}
