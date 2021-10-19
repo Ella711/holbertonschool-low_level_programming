@@ -18,5 +18,7 @@ unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 /* locates a substring */
 char *_strstr(char *haystack, char *needle);
+/* counts the length of string */
+int _strlen(char *s);
 
 #endif /* MAIN_HEADER */
