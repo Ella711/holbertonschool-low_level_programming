@@ -4,6 +4,7 @@
 #include <unistd.h>
 #include <ctype.h>
 #include <time.h>
+#include <stdlib.h>
 
 /* function that fills memory with a constant byte */
 char *_memset(char *s, char b, unsigned int n);
