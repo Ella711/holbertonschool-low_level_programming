@@ -1,22 +1,6 @@
 #include "main.h"
 
 /**
-* _strlen - returns length of string
-*@s: a string
-*Return: i
-*/
-
-int _strlen(char *s)
-{
-	int i;
-
-	for (i = 0; s[i] != '\0'; i++)
-	{
-	}
-	return (i);
-}
-
-/**
  * _strchr - locates a char in a string
  * @s: any string
  * @c: char to be located
@@ -39,13 +23,12 @@ char *_strchr(char *s, char c)
 	return (s);
 }
 
-#include "main.h"
-
 /**
 * _strncmp - compares two strings
-*@s1: string
-*@s2: string
-*Return: comp
+* @s1: string
+* @s2: string
+* @n: any integer length
+* Return: comp
 */
 
 int _strncmp(char *s1, char *s2, int n)
@@ -82,12 +65,19 @@ int _strncmp(char *s1, char *s2, int n)
 char *_strstr(char *haystack, char *needle)
 {
 	char *p = haystack;
-	int len = _strlen(needle);
+	int i = 0;
+
+	for (; needle[i]; i++)
+	{
+	}
 
 	for (; (p = _strchr(p, *needle)) != 0; p++)
 	{
-		if (_strncmp(p, needle, len) == 0)
-			return (char *)p;
+		if (*p == '\0' && *needle == '\0')
+			return (NULL);
+		if (_strncmp(p, needle, i) == 0)
+			return ((char *)p);
 	}
 	return (0);
 }
+
