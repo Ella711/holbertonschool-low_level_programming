@@ -20,5 +20,9 @@ char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
 /* counts the length of string */
 int _strlen(char *s);
+/* prints the chessboard */
+void print_chessboard(char (*a)[8]);
+/* prints */
+int _putchar(char c);
 
 #endif /* MAIN_HEADER */
