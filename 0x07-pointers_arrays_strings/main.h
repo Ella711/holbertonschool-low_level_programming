@@ -24,5 +24,7 @@ int _strlen(char *s);
 void print_chessboard(char (*a)[8]);
 /* prints */
 int _putchar(char c);
+/* adds the diagnonals */
+void print_diagsums(int *a, int size);
 
 #endif /* MAIN_HEADER */
