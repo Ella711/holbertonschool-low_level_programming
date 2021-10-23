@@ -25,20 +25,17 @@ int main(int argc, char *argv[])
 			{
 				sum += strtol(argv[i], NULL, 10);
 			}
-			else if (*argv[i] == '-')
-			{
-				sum += strtol(argv[i], NULL, 10) * -1;
-				continue;
-			}
 			else
 			{
 				printf("Error\n");
 				return (1);
 			}
-			
-		}printf("%d\n", sum);
-		
+
+		}
+		printf("%d\n", sum);
+
 	}
-	
+
 	return (0);
 }
+
