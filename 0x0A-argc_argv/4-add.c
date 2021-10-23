@@ -27,6 +27,7 @@ int main(int argc, char *argv[])
 			}
 			else if (*argv[i] == '-')
 			{
+				sum += strtol(argv[i], NULL, 10) * -1;
 				continue;
 			}
 			else
