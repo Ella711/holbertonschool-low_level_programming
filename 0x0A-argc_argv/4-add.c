@@ -17,25 +17,21 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
-	else
+
+	for (i = 1; i < argc; i++)
 	{
-		for (i = 1; i < argc; i++)
+
+		if (isdigit(*argv[i]))
 		{
-
-			if (isdigit(*argv[i]))
-			{
-				sum += strtol(argv[i], NULL, 10);
-			}
-			else
-			{
-				printf("Error\n");
-				return (1);
-			}
-
+			sum += strtol(argv[i], NULL, 10);
 		}
-		printf("%d\n", sum);
-
+		else
+		{
+			printf("Error\n");
+			return (1);
+		}
 	}
+	printf("%d\n", sum);
 
 	return (0);
 }
