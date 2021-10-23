@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 			}
 			else if (*argv[i] == '-')
 			{
-				i = i + 2;
+				continue;
 			}
 			else
 			{
