@@ -15,5 +15,8 @@ memory, which contains a copy of the string */
 char *_strdup(char *str);
 /* concatenates two strings */
 char *str_concat(char *s1, char *s2);
+/* returns a pointer to a 2 dimensional array of 
+integers */
+int **alloc_grid(int width, int height);
 
 #endif /* MAIN_HEADER */
