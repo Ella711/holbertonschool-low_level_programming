@@ -15,10 +15,10 @@ int **alloc_grid(int width, int height)
 	if (width <= 0 && height <= 0)
 		return (NULL);
 
-	p = (int **)malloc(width * sizeof(int *)); /* columns */
-	for (i = 0; i < width; i++)
+	p = (int **)malloc(height * sizeof(int *)); /* columns */
+	for (i = 0; i < height; i++)
 	{
-		p[i] = (int *)malloc(height * sizeof(int)); /* rows */
+		p[i] = (int *)malloc(width * sizeof(int)); /* rows */
 	}
 	if (p == NULL)
 		return (NULL);
