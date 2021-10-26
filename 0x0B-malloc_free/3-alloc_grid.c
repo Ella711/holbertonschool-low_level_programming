@@ -12,7 +12,7 @@ int **alloc_grid(int width, int height)
 	int **p;
 	int i;
 
-	p = (int **)malloc(width * sizeof(int *)); /* columns */
+	p = (int **)malloc(width * sizeof(int)); /* columns */
 	for (i = 0; i < width; i++)
 	{
 		p[i] = (int *)malloc(height * sizeof(int)); /* rows */
