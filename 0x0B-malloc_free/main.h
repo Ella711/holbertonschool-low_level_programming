@@ -13,5 +13,7 @@ char *create_array(unsigned int size, char c);
 /* returns a pointer to a newly allocated space in 
 memory, which contains a copy of the string */
 char *_strdup(char *str);
+/* concatenates two strings */
+char *str_concat(char *s1, char *s2);
 
 #endif /* MAIN_HEADER */
