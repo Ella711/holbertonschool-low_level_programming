@@ -10,6 +10,8 @@
 
 /* allocates memory using malloc */
 void *malloc_checked(unsigned int b);
+/* cocatenates 2 strins limited by n */
+char *string_nconcat(char *s1, char *s2, unsigned int n);
 
 
 #endif /* MAIN_HEADER */
