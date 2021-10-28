@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
 			}
 			else
 				change += cents / n[i];
-			cents = cents - ((cents / n[i]) * n[i]);
+			cents = cents - ((cents / n[i]) * n[i]); //same as cents =% n[i]
 		}
 		else
 			continue;
