@@ -3,12 +3,16 @@
 
 /**
  * malloc_checked - allocates memory using malloc
- * exit: 98
+ * @b: integer
+ * Return: allocmem
  */
 
 void *malloc_checked(unsigned int b)
 {
-	void *allocMem = malloc(sizeof *allocMem * b);
-	if (allocMem = NULL)
+	int *allocMem = malloc(sizeof(b) * b);
+
+	if (allocMem == NULL)
 		exit(98);
+	return (0);
 }
+
