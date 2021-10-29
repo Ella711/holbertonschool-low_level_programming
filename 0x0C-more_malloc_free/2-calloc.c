@@ -1,0 +1,26 @@
+#include "main.h"
+
+/**
+* _calloc - allocates memory and is set to 0
+*@nmemb: number of elements
+*@size: type of element
+*Return: pointer with memory assigned
+*/
+
+void *_calloc(unsigned int nmemb, unsigned int size)
+{
+	int *fakecalloc;
+	int i = 0;
+
+	if (nmemb == 0 || size == 0)
+		return (NULL);
+	
+	fakecalloc = malloc(size * nmemb);
+	if (fakecalloc == NULL)
+		return (NULL);
+
+	for (; fakecalloc[i]; i++)
+		fakecalloc[i] = 0;
+	return (fakecalloc);
+
+}
