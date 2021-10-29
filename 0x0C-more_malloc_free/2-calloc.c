@@ -19,7 +19,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (fakecalloc == NULL)
 		return (NULL);
 
-	for (; fakecalloc[i]; i++)
+	for (; i < (nmemb * size); i++)
 		fakecalloc[i] = 0;
 	return (fakecalloc);
 
