@@ -10,11 +10,11 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	int *fakecalloc;
-	int i = 0;
+	unsigned int i = 0;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	
+
 	fakecalloc = malloc(size * nmemb);
 	if (fakecalloc == NULL)
 		return (NULL);
@@ -24,3 +24,4 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	return (fakecalloc);
 
 }
+
