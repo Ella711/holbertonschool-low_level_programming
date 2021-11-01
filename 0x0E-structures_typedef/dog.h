@@ -1,3 +1,5 @@
+#include <stdlib.h>
+#include <stdio.h>
 #ifndef _DOG_
 #define _DOG_
 
