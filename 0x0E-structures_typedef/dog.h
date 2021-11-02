@@ -27,6 +27,8 @@ void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 /* created a new dog */
 dog_t *new_dog(char *name, float age, char *owner);
+/* frees dog */
+void free_dog(dog_t *d);
 
 #endif /* #ifndef _DOG_ */
 
