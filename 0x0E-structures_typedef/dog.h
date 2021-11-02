@@ -17,6 +17,8 @@ struct dog
 
 /* function that initializes structure */
 void init_dog(struct dog *d, char *name, float age, char *owner);
+/* function that prints a struct */
+void print_dog(struct dog *d);
 
 #endif /* #ifndef _DOG_ */
 
