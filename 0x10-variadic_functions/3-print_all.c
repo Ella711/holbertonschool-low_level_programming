@@ -19,7 +19,7 @@ void print_all(const char * const format, ...)
 		switch (*str++)
 		{
 			case 'c':
-				putchar(va_arg(args, int));
+				printf("%c", va_arg(args, int));
 				break;
 			case 'i':
 				printf("%d", va_arg(args, int));
