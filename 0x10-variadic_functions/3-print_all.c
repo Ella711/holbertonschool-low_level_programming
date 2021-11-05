@@ -41,8 +41,9 @@ void print_all(const char *const format, ...)
 		}
 		if (*str++ != '\0')
 			printf(", ");
-		*str--;
+		str--;
 	}
 	printf("\n");
 	va_end(args);
 }
+
