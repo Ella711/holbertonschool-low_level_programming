@@ -9,7 +9,7 @@
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	char *sval, *separator = ", ";
+	char *sval;
 	const char *str = format;
 
 	va_start(args, format);
@@ -19,7 +19,7 @@ void print_all(const char * const format, ...)
 		switch (*str++)
 		{
 			case 'c':
-				printf("%c", va_arg(args, int));
+				putchar(va_arg(args, int));
 				break;
 			case 'i':
 				printf("%d", va_arg(args, int));
@@ -39,8 +39,8 @@ void print_all(const char * const format, ...)
 			default:
 				continue;
 		}
-		if (*(str))
-			printf("%s", separator);
+		if (*str)
+			printf(", ");
 	}
 	printf("\n");
 	va_end(args);
