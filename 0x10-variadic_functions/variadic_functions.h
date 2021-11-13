@@ -7,6 +7,12 @@
 #include <stdlib.h>
 #include <stdarg.h>
 
+typedef struct dt
+{
+    char letter;
+    void (*func)(va_list);
+} datatype;
+
 /* returns the sum of all it's parameters */
 int sum_them_all(const unsigned int n, ...);
 /* prints numbers followed by new line */
