@@ -8,10 +8,16 @@
 
 void free_listint(listint_t *head)
 {
+	listint_t *traverse;
+
+	if (head == NULL)
+		return;
+
 	while (head != NULL)
 	{
-		free(head->n);
-		free(head);
+		traverse = head;
 		head = head->next;
+		free(traverse);
 	}
 }
+
