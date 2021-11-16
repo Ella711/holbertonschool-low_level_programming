@@ -12,7 +12,10 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
 	listint_t *traverse;
 	unsigned int count = 0;
-
+	
+	if (head == NULL)
+		return (NULL);
+	
 	traverse = head;
 
 	while (count < index)
@@ -20,8 +23,7 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 		traverse = traverse->next;
 		count++;
 	}
-	if (traverse == NULL)
-		return (NULL);
+
 	return (traverse);
 }
 
