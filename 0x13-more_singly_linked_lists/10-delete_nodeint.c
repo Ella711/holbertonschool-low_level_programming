@@ -10,10 +10,11 @@
 
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-	listint_t *traverse, *delete_node;
+	listint_t *traverse, *node;
+	unsigned int count = 0;
 
 	traverse = *head;
-	delete_node = *head;
+	node = *head;
 
 	if (*head == NULL)
 		return (-1);
@@ -24,18 +25,19 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		free(traverse);
 		return (1);
 	}
-	else
+	index--;
+	while (count < index && traverse != NULL)
 	{
-		while (index != 1)
-		{
-			traverse = delete_node;
-			delete_node = delete_node->next;
-			index--;
-		}
-		traverse->next = delete_node->next;
-		free(delete_node);
-		delete_node = NULL;
+		traverse = traverse->next;
+		count++;
 	}
+	if (traverse == NULL || traverse->next == NULL)
+		return (-1);
+	
+	node = traverse->next->next;
+	free(traverse->next);
+	traverse->next = node;
+
 	return (1);
 }
 
