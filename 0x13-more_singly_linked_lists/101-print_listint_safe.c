@@ -11,6 +11,7 @@ size_t print_listint_safe(const listint_t *head)
 	const listint_t *new_head = NULL, *tail = NULL;
 
 	new_head = head;
+	num_nodes++;
 	while (new_head)
 	{
 		tail = new_head;
