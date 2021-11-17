@@ -11,7 +11,6 @@ size_t print_listint_safe(const listint_t *head)
 	const listint_t *new_head = NULL, *tail = NULL;
 
 	new_head = head;
-	num_nodes++;
 	while (new_head)
 	{
 		tail = new_head;
@@ -21,9 +20,9 @@ size_t print_listint_safe(const listint_t *head)
 		if (tail < new_head)
 		{
 			printf("-> [%p] %d\n", (void *)new_head, new_head->n);
-			return (num_nodes);
+			break;
 		}
 	}
-	return (0);
+	return (num_nodes);
 }
 
