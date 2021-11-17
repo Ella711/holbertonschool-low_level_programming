@@ -44,6 +44,8 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n);
 int delete_nodeint_at_index(listint_t **head, unsigned int index);
 /* reverses a listint_t linked list */
 listint_t *reverse_listint(listint_t **head);
+/* prints a list */
+size_t print_listint_safe(const listint_t *head);
 
 
 #endif /* LINKED_LISTS_HEADER */
