@@ -7,6 +7,8 @@
 
 /* function that converts a binary number to an unsigned int */
 unsigned int binary_to_uint(const char *b);
+/* prints the binary representation of a number */
+void print_binary(unsigned long int n);
 
 #endif /* MAIN_HEADER */
 
