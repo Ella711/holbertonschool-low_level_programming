@@ -35,10 +35,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (wfd == -1)
 		return (0);
 
-	/*
-	 * if (letters > length)
-	*	length++;
-	*/
+	if (letters > length)
+		return (0);
 
 	close(ffd);
 	free(buffer);
