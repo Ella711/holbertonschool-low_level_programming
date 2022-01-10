@@ -6,7 +6,6 @@
 #include <string.h>
 #include <stdio.h>
 
-
 /* Prints char */
 int _putchar(char c);
 /* function that checks for lowercase character */
