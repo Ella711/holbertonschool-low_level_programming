@@ -27,7 +27,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	key_node->value = value_copy;
 	key_node->next = NULL;
 
-	index = key_index((const unsigned char *)key, ht->size);
+	index = key_index((unsigned char *)key, ht->size);
 
 	if (ht->array[index] != NULL)
 		key_node->next = ht->array[index];
