@@ -1,0 +1,28 @@
+CC = gcc
+CFLAGS = -Wall -Werror -Wextra -pedantic
+SRC = $(wildcard *.c)
+OBJ = $(SRC:.c=.o)
+NAME = school
+RM = rm -f
+
+# Builds executable
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+# Compiles with cflags
+%o: %c
+	$(CC) $(CFLAGS) -c -o $@ $^
+
+# deletes all Emacs and Vim temporary files along with the executable
+clean:
+	$(RM) *~ $(NAME)
+
+# deletes object files
+oclean:
+	$(RM) $(OBJ)
+
+# deletes all Emacs and Vim temporary files, the executable, and the object files
+fclean: clean oclean
+
+# forces recompilation of all source files
+re: oclean all
